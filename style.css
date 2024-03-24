@@ -153,6 +153,7 @@
   
   nav li{
     flex: 1 1 0;
+    
   }
       
   nav{
@@ -174,8 +175,10 @@
 #hero_content{
   display: flex;
   flex-direction: column;
+  gap: 3px;
   margin-top:30px;
-  margin-left:25px ;
+  margin-left:25px;
+  margin-bottom:10px;
 
 }
 #paraatright{
@@ -204,5 +207,21 @@
   width:370px;
   column-gap:9px;
   box-shadow:2px 2px 1px rgba(30,30,30,0.4) ;
+  transition: transform 0.35s ease ;
+  
+ }
+ .adpic:hover{
+  box-shadow:3px 3px 2px rgba(60,60,80,0.4);
+  transform:scale(1.025);
+ }
+ .hc{
+  box-shadow:3px 3px 1px rgba(60,60,80,0.4);
+  transition: transform 0.3s ease-in ;
+  
+  }
+
+ .hc:hover{
+  box-shadow:3px 3px 2px rgba(60,60,80,0.4);
+  transform:scale(1.05);
   
  }
