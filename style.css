@@ -164,3 +164,23 @@
   }
       
   } /* end media 768 */
+ #intropic{
+    width:100%;
+    opacity:0.6 ;
+    position:absolute;
+  }
+
+      
+  #picontainer{
+    display:flex;
+    justify-content:space-between;
+    margin:10px auto;
+  }
+  
+ .adpic{
+  height: 540px;
+  width:370px;
+  column-gap:9px;
+  box-shadow:2px 2px 1px rgba(30,30,30,0.4) ;
+  
+ }
