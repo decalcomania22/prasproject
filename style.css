@@ -1,0 +1,79 @@
+*{
+    font-family: verdana;
+    margin: 0;
+  }
+  
+  body{
+    background: #eee;
+    color: #333;
+  }
+  
+  .wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  nav{
+    background-color:#B7CB9D;
+    max-height: 60px;
+  }
+  /* menu base styles */ 
+  .nav-link:hover{
+    background-color: #04724D;
+    text-decoration-color: #fff;
+  }
+  
+  /* social menu base styles */
+  
+  a.profile{
+    background: url(https://smallimg.pngkey.com/png/small/115-1150152_default-profile-picture-avatar-png-green.png) no-repeat center;
+    background-size: 100%;
+    background-position: center;
+  }
+  
+  .social a{
+    text-indent: -10000px;
+    margin: 0 auto;
+  }
+  
+  .social{
+    max-width: 70px;
+   
+    margin: 0 auto; /* do at end */
+  }
+  
+  /* grid vs flex base styles */
+  
+  
+  
+  /* flex styles */
+  
+  nav ul.social li{
+    flex: 1 1 0;
+  }
+  
+  nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+  }
+  
+  @media screen and (min-width: 768px){
+  
+  nav ul{
+    display: flex;
+  }
+  
+  nav li{
+    flex: 1 1 0;
+  }
+      
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+    
+  ul.social{
+    margin: 0;
+  }
+      
+  } /* end media 768 */
