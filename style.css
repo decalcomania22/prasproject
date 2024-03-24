@@ -14,9 +14,10 @@
     margin: 0 auto;
   }
   nav{
-    background-color:#B7CB9D;
+    
     max-height: 60px;
   }
+  
   /* menu base styles */ 
  /*
   .container {
@@ -106,7 +107,7 @@
   }
   */
   .nav-link:hover{
-    background-color: #04724D;
+    background-color: #98e0c8;
     text-decoration-color: #fff;
   }
   
