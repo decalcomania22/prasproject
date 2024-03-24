@@ -171,6 +171,27 @@
     position:absolute;
   }
 
+#hero_content{
+  display: flex;
+  flex-direction: column;
+  margin-top:30px;
+  margin-left:25px ;
+
+}
+#paraatright{
+  background-color: rgba(60,60,80,0.6);
+  color:#10102e;
+  border-radius:5px;
+  width:35%;
+  margin-left:25px;
+  padding:12px;
+  
+}
+
+#adcontainer{
+  margin-top: 100px;
+}
+
       
   #picontainer{
     display:flex;
