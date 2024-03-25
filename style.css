@@ -253,7 +253,7 @@
  #countgrid li{
   display:flex;
   flex-direction:column;
-  background-image: linear-gradient(to right,rgb(20,20,20),rgb(80,80,80));
+  background-image: linear-gradient(to right,rgb(33, 33, 33),rgb(45, 45, 45));
   border-radius:10px;
   padding:10px;
   transition: transform 0.35s ease ;
