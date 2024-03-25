@@ -192,7 +192,8 @@
 }
 
 #adcontainer{
-  margin-top: 100px;
+  margin-top: 67px;
+  background-image: linear-gradient(180deg,rgb(168, 229, 249),rgb(208, 236, 254));
 }
 
       
@@ -224,4 +225,46 @@
   box-shadow:3px 3px 2px rgba(60,60,80,0.4);
   transform:scale(1.05);
   
+ }
+
+
+ footer{
+  background-color:rgb(30,30,30);
+
+ }
+ #reviews{
+  background-color: white;
+ }
+ .no.{
+  color:rgb(70, 70, 212);
+  font-weight:bold ;
+
+ }
+ #countgrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  color:white;
+  list-style:none;
+
+    gap:8px 10px;
+    padding:40px 20px 40px 430px;
+    
+ }
+ #countgrid li{
+  display:flex;
+  flex-direction:column;
+  background-image: linear-gradient(to right,rgb(20,20,20),rgb(80,80,80));
+  border-radius:10px;
+  padding:10px;
+  transition: transform 0.35s ease ;
+  box-shadow:3px 3px 2px rgba(30,30,30,0.4);
+ }
+ #countgrid li:hover{
+transform:scale(1.025);
+ }
+
+ #countgrid li div{
+  display:flex;
+  flex-direction:row;
+  gap:5px;
  }
