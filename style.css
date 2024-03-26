@@ -256,7 +256,7 @@
   
  }
  .infobut{
-  background-image: linear-gradient(135deg,rgb(9, 161, 9),rgb(174, 230, 174));
+  background-image: linear-gradient(135deg,rgb(55, 179, 55),rgb(44, 160, 44));
 
   border-radius:3px;
   box-shadow: 2px 2px 3px rgba(30,30,30,0.6);
@@ -270,7 +270,7 @@
 
  footer{
   /* background-color:rgb(30,30,30); */
-  background-image: linear-gradient(90deg,rgb(36, 36, 36),rgb(39, 39, 39));
+  background-image:linear-gradient(90deg,rgb(229, 253, 225),rgb(255, 255, 255));
   display: flex;
   gap:50px;
   padding-top:25px;
@@ -321,11 +321,12 @@ color:rgb(56, 139, 56);
  #countgrid li{
   display:flex;
   flex-direction:column;
-  background-image: linear-gradient(to right,rgb(33, 33, 33),rgb(45, 45, 45));
+  background-image: linear-gradient(to right,rgb(225, 255, 240),rgb(241, 247, 242));
   border-radius:10px;
   padding:10px;
   transition: transform 0.35s ease ;
   box-shadow:3px 3px 2px rgba(30,30,30,0.4);
+  color:#333;
  }
  #countgrid li:hover{
 transform:scale(1.025);
@@ -343,11 +344,12 @@ transform:scale(1.025);
   color:white;
   background-color: rgb(56, 139, 56);
  }
+ /* linear-gradient(90deg,rgb(36, 36, 36),rgb(39, 39, 39)) */
  #contacts{
-  background-image:linear-gradient(90deg,rgb(36, 36, 36),rgb(39, 39, 39)) ;
+  background-image:linear-gradient(90deg,rgb(229, 253, 225),rgb(255, 255, 255)) ;
   display:flex;
   gap:20px;
-  color:white;
+  color:grey;
   padding-right: 30px;
   padding-bottom:20px;
   justify-content: end;
