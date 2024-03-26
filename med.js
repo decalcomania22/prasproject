@@ -42,3 +42,4 @@ textCircle.forEach((value, key) => {
     newSpan.style.setProperty('--rotate', rotateThisSpan + 'deg');
     c.appendChild(newSpan); 
 });
+
