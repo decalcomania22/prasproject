@@ -13,10 +13,8 @@
     max-width: 960px;
     margin: 0 auto;
   }
-  nav{
-    
-    max-height: 60px;
-  }
+ 
+
   
   /* menu base styles */ 
  /*
@@ -172,7 +170,7 @@
       
   } /* end media 768 */
   .offcanvas-header{
-    background-image: linear-gradient(180deg,rgb(66, 66, 66),rgb(68,68,68));
+    background-image: linear-gradient(180deg,rgb(100, 225, 221),rgb(174, 219, 238));
   }
   .offcanvasoptions{
     font-family:Nunito;
@@ -193,35 +191,92 @@
   .content{
     background-image: url(assets/pic2.png);
     opacity:0.7;
-    padding:20px;
+    padding:30px;
+    display:flex;
+    
+    gap:200px;
+    
+  }
+  
+
+  #hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top:30px;
+    margin-left:25px;
+    margin-bottom:10px;
+  
+  }
+  #paraatright{
+    background-color: rgba(60,60,80,0.6);
+    color:#10102e;
+    border-radius:5px;
+    width:100%;
+  
+    padding:12px;
+    
+  }
+ 
+  .buttonlist{
+   
+    display:flex;
+   justify-content: center;
+  
+    flex-direction:column;
+    gap:7px;
+    width:80%;
+    margin-top:230px;
+
+  }
+  .longerbuttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .shorterbuttons{
+    display:flex;
+    gap:7px;
+  }
+  
+
+   .longerbuttons .hb{
+    list-style:none;
+    background-color:white ;
+    border-radius:30px;
+    box-shadow:3px 3px 4px rgba(60,60,80,0.4);
+    color:rgb(4, 104, 104);
+    padding:15px;
+    transition:transform 0.3s ease;
+  }
+  .shorterbuttons .hb{
+    
+      list-style:none;
+      background-color:white ;
+      border-radius:30px;
+      box-shadow:3px 3px 4px rgba(60,60,80,0.4);
+      
+      padding:12px;
+      transition:transform 0.3s ease;
+    
+  }
+  
+  .hb:hover{
+    transform:scale(1.015);
+    background-image:linear-gradient(90deg,rgb(117, 201, 197),rgb(163, 246, 242));
+    
   }
 
-#hero_content{
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  margin-top:30px;
-  margin-left:25px;
-  margin-bottom:10px;
+.upcomses{
+ 
+  box-shadow: 3px 3px 4px rgba(60,60,80,0.4);
+  object-fit: cover;
 
 }
-#paraatright{
-  background-color: rgba(60,60,80,0.6);
-  color:#10102e;
-  border-radius:5px;
-  width:35%;
-  margin-left:25px;
-  padding:12px;
-  
-}
-
-
 
 
 #adcontainer{
   margin-top: 20px;
-  
-  
 }
 
       
@@ -256,7 +311,7 @@
   
  }
  .infobut{
-  background-image: linear-gradient(135deg,rgb(55, 179, 55),rgb(44, 160, 44));
+  
 
   border-radius:3px;
   box-shadow: 2px 2px 3px rgba(30,30,30,0.6);
@@ -270,7 +325,7 @@
 
  footer{
   /* background-color:rgb(30,30,30); */
-  background-image:linear-gradient(90deg,rgb(229, 253, 225),rgb(255, 255, 255));
+  background-image:linear-gradient(90deg,rgb(225, 252, 253),rgb(255, 255, 255));
   display: flex;
   gap:50px;
   padding-top:25px;
@@ -321,7 +376,7 @@ color:rgb(56, 139, 56);
  #countgrid li{
   display:flex;
   flex-direction:column;
-  background-image: linear-gradient(to right,rgb(225, 255, 240),rgb(241, 247, 242));
+  background-image: linear-gradient(to right,rgb(225, 255, 248),rgb(241, 247, 245));
   border-radius:10px;
   padding:10px;
   transition: transform 0.35s ease ;
@@ -342,11 +397,11 @@ transform:scale(1.025);
   border-radius:3px;
   box-shadow:1px 1px 1px rgba(60,60,80,0.4);
   color:white;
-  background-color: rgb(56, 139, 56);
+  background-color: rgb(155, 235, 222);
  }
  /* linear-gradient(90deg,rgb(36, 36, 36),rgb(39, 39, 39)) */
  #contacts{
-  background-image:linear-gradient(90deg,rgb(229, 253, 225),rgb(255, 255, 255)) ;
+  background-image:linear-gradient(90deg,rgb(225, 252, 253),rgb(255, 255, 255)) ;
   display:flex;
   gap:20px;
   color:grey;
@@ -354,7 +409,7 @@ transform:scale(1.025);
   padding-bottom:20px;
   justify-content: end;
  }
- @media screen and (max-width:600px){
+ @media screen and (max-width:768px){
   footer{
     flex-direction:column;
    
@@ -366,5 +421,12 @@ transform:scale(1.025);
   #picontainer{
     flex-direction:column;
     align-items: center;
+  }
+  .content{
+    flex-direction: column;
+    gap:40px;
+  }
+  .buttonlist{
+    margin-top:0;
   }
  }
