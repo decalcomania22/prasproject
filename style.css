@@ -118,7 +118,9 @@
     background-position: center;
   }
 
-  
+  nav{
+    background-color: white;
+  }
   .social a{
     text-indent: -10000px;
     margin: 0 auto;

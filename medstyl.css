@@ -177,6 +177,9 @@
         transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
     }
 }
+nav{
+  background-color: white;
+}
 .nav-link:hover{
   background-color: #98e0c8;
   text-decoration-color: #fff;
