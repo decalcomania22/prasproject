@@ -18,7 +18,7 @@
 
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-light navbar-expand-md">
+    <nav class="navbar fixed-top navbar-light navbar-expand-md">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <!--enter logo here-->
@@ -54,7 +54,7 @@
                   <li><a class="dropdown-item " href="#">Help</a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
                 </ul>
               </li>
             </ul>
@@ -63,12 +63,23 @@
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <a class="nav-item">
-              <a class="nav-link display-5 active text-success d-flex" aria-current="page" href="#">
+              <a class="nav-link display-6 active text-success d-flex" aria-current="page" href="#sidebar" role="button" data-bs-toggle="offcanvas" aria-controls="sidebar">
                 <i class="bi bi-person-circle"></i></a>
               </a>
           </li>
           </div>
-        
+          </li>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="sidebar-label" style="color:white; font-weight: bold; font-family: 'Nunito';">Username</div>
+              <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a href="" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-person "></i>Switch Account</div></a>
+              <a href="" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-box-arrow-right "></i>Log Out</div></a>
+            </div>
+          </div>
       </nav>
       <div class=" p-2"><h4>How can we help you today?</h4></div>
       <div class="wrapper">
