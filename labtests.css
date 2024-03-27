@@ -1,0 +1,119 @@
+body{
+  
+    background-image:linear-gradient(180deg,rgb(234, 248, 248),rgb(241, 252, 240));
+    display:flex;
+    gap:17px;
+    padding:90px 20px;
+    color:rgb(1, 118, 1);
+    
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+.left-thing{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+
+.formsearch{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(45,45,45,0.5);
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    border-radius: 8px;;
+
+}
+#cityname,#gensearch{
+    border-width:0;
+    border-bottom-width:2px ;
+    border-color: rgb(0, 117, 0);
+}
+#part1{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+#findbutton{
+    padding:5px 30px;
+    background-color: rgb(135, 227, 227);
+    color:grey;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px rgba(45,45,45,0.5);
+    border-width:0;
+}
+.moredetail{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(45,45,45,0.5);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-radius: 8px;
+
+}
+.placedate{
+    display:flex;
+    gap:7px;
+}
+.rem{
+    display:flex;
+    gap:7px;
+}
+
+#submitbutton{
+    padding:5px 30px;
+    background-color: rgb(125, 229, 220);
+    color:grey;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px rgba(45,45,45,0.5);
+    border-width:0;
+}
+.right-things{
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(45,45,45,0.5);
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    gap:3px;
+    padding:12px;
+}
+
+
+.col{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:3px 3px 4px rgba(45,45,45,0.5);
+    display: flex;
+    flex-direction: column;
+    color:rgb(67, 67, 67);
+    margin:10px 10px 10px 0;
+    
+
+   
+}
+.tit{
+    color:green;
+    padding-top:5px;
+}
+
+.col img{
+    margin:5px auto;
+width:40px;
+height:40px;
+
+}
+
+.carousel-inner img{
+    object-fit: fill;
+}
+@media screen and (max-width:768px){
+  body{
+    flex-direction: column;
+  }
+   }
