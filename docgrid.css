@@ -1,0 +1,35 @@
+body{
+    padding-top:100px;
+    background-color: rgb(190, 242, 239);
+}
+.prod{
+    margin-bottom: 30px;
+}
+
+.col img{
+    height:30%;
+    margin-bottom:5px;
+} 
+.col p{
+    color:rgb(81, 81, 81);
+    font-family: 'Nunito';
+    margin:0.5rem auto;
+}
+.cardbutton{
+    border-width: 0;
+    padding:10px 30px;
+    background-color: rgb(13, 132, 112);
+    color:white;
+    border-radius:8px;
+    box-shadow: 3px 3px 4px rgba(60,60,80,0.4);
+    margin:0 auto;
+}
+.buttongrp{
+    padding:10px;
+    display: flex;
+
+    flex-direction:column;
+    gap:8px;
+    padding-bottom: 20px;
+
+}
