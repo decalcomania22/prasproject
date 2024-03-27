@@ -45,6 +45,27 @@
     --width-circle: 150vw;
     --radius: calc(100vw / 6);
 }
+#searchmedi{
+  background: url(assets/bg.png);
+  border-radius: 8px;
+  margin:10px 15px 10px 15px;
+  text-align: center;
+}
+#mediform{
+  padding:10px 20px;
+  margin:10px auto;
+  width:50%;
+}
+
+#medsbutton{
+  border-width: 0;
+  padding:10px 30px;
+  background-color: rgb(13, 132, 112);
+  color:white;
+  border-radius:8px;
+  box-shadow: 3px 3px 4px rgba(60,60,80,0.4);
+  margin:10px auto;
+}
 .slider{
     width: 100vw;
     height: 100vh;
