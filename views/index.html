@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" > 
+    <title>Hygieia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+   <header>  <!--navbar-->
+
+	  
+    <nav class="navbar fixed-top navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <!--enter logo here-->
+          <img src="/logo.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+          <div class="display-12 text-success fw-bold d-inline-block ">Hygieia  </div> 
+        </a>
+
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="navbar-nav text-center row justify-container-between" >
+            <li class="nav-item co-md-5">
+              <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/">
+                <i class="bi bi-house-door-fill "></i> Home</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/doctorsapp">
+                <i class="bi bi-hospital-fill"></i>Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/labtests">
+                <i class="bi bi-prescription2"></i>Labtests</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/medicines">
+                <i class="bi bi-capsule-pill"></i>Medicines</a>
+              </li>
+            <li class="nav-item dropdown display-12 text-success d-flex">
+              <a class="nav-link dropdown-toggle text-success nav_opt" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="#">Help</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-none d-md-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <a class="nav-item">
+            <a class="nav-link display-6 active text-success d-flex" aria-current="page" href="#sidebar" role="button" data-bs-toggle="offcanvas" aria-controls="sidebar">
+              <i class="bi bi-person-circle"></i></a>
+            </a>
+        </li>
+        </div>
+
+        <!--off canvas-->
+ 
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="sidebar-label" style="color:white; font-weight: bold; font-family: 'Nunito';">Username</div>
+            <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a href="/login" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-person "></i>Switch Account</div></a>
+            <a href="/login" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-box-arrow-right "></i>Log Out</div></a>
+          </div>
+        </div>
+        
+      
+    </nav>
+  <!--  <div class="wrapper">
+
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Lab Tests</a></li>
+          <li><a href="">Consult</a></li>
+          <li><a href="">Records</a></li>
+          <li><a href="">Medicines</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="" class="profile">Profile</a></li>
+        </ul>
+      </nav>
+      
+    -->
+    </header>
+
+
+	  <main> <!--herocontent-->
+
+
+      <div class="content">
+         <!-- <img src="/pic2.png
+        " alt="Doctors" id="intropic"> -->
+        <div class="herotext col-md-4"> 
+          <div id="hero_content">   <h2>Hello,Welcome to Hygieia!</h2>
+   <h6>We are here to help you!</h7>
+   </div>
+
+
+   <div id="paraatright" class="col-md-6 col-ld-3">
+    <p>Hygieia now has over 50,000 doctors , excellent in their fields a few clicks away from you .Have the best doctors available for yourself from the comfort of your home .Hygieia uses 10% of its capital profit each year from treatment and welfare of poor kids.So,when the best treatment and charity awaits you at Hygieia,why think more.:) We’re on the cutting edge of innovation in the field of Alzheimer’s research, prevention, and treatment. Learn more news about our company and our mission on our media page.Hygieia provides the first real hope for Alzheimer’s. We are a medical information company that uses high-tech software to provide solutions for one of the leading causes of death worldwide. 
+    </p>
+   </div>
+  </div>
+
+
+  <div class="herobuttons col-md-4">
+    <ul class="buttonlist">
+      <div class="longerbuttons"> <li class="hb"><a href="/doctorsapp" style="text-decoration: none; color:rgb(4, 104, 104);">Book an Appointment</a></li>
+   <li class="hb"><a href="/medicines" style="text-decoration: none; color:rgb(4, 104, 104);">Order Medicines and Products</a></li></div>
+  <div class="shorterbuttons"><li class="hb"><a href="" style="text-decoration: none; color:rgb(4, 104, 104);">Health Record</a></li>
+   <li class="hb"><a href="/labtests" style="text-decoration: none; color:rgb(4, 104, 104);">Book Lab Tests</a></li>
+</div>
+   
+    </ul>
+  </div>
+  
+
+  </div>
+
+
+<!--https://medicalelearning.ro/wp-content/uploads/2019/06/EIAT-medical-hub.jpg-->
+
+	        <!--advertisement cards-->
+          <div id="adcontainer"><section id="ads" class="container-lg text-center " >
+            <h3 class=" mb-3" style="color:rgb(5, 112, 5);"> Try from Hygieia</h3>
+            <h6 style="color:rgb(13, 158, 13);" class="mb-3">Tap on the banners to know more.<i class="bi bi-badge-ad-fill"></i> <i class="bi bi-stars"></i>  </h6>
+            <div id="picontainer"><img src="insurance.png" class="adpic">
+            <img src="premium.png" class="adpic"></div>
+           </section></div>
+     
+    <div id="rempart"><!--carousel-->
+
+      <p class="display-6 text-center mt-4" style="color:rgb(5, 112, 5); font-size:1.8rem;">Upcoming Sessions<span>   </span><i class="bi bi-person-video3"></i></p>
+      <div id="currentSessionCarousel" class="carousel slide carousel-md  ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#currentSessionCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#currentSessionCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#currentSessionCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner p-5 pt-0 ">
+          <div class="carousel-item upcomses">
+            <img src="/HYGIEIA.png
+            " class="d-block w-100" alt="..." style="border-radius: 8px; overflow: hidden;">
+          </div>
+          <div class="carousel-item active upcomses">
+            <img src="/MENTALHEALTH.png" class="d-block w-100" alt="..." style="border-radius: 8px; overflow:hidden">
+          </div>
+          <div class="carousel-item upcomses">
+            <img src="/YOGA.png" class="d-block w-100" alt="..." style="border-radius: 8px; overflow: hidden;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#currentSessionCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#currentSessionCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+	 <!--health cards-->
+
+
+
+	    
+    <div class="s p-1">
+      <div class="co-md-5 text-center text-md-start">
+        <h2>
+          <div class="l p-1" style="text-align: center; color:rgb(9, 130, 9);">Know more about them</div>
+        </h2>
+      </div>
+      <div class="row mb-5 mt-2 align-items-center justify-content-center ">
+      <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card hc" style="width: 18rem;">
+        <img src="https://diabetes.co.in/media/uploads/2020/06/risk-factors-of-type-2-diabetes.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="fw-bold" style="color:rgb(45,45,45);">DIABETES</p>
+          <p class="card-text" style="color:rgb(48,48,48);">Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood glucose. Hyperglycaemia, also called raised blood glucose or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.</p>
+          
+         <a target ="_blank" href="https://www.who.int/news-room/fact-sheets/detail/diabetes" class="btn  btn-lg mt-3 infobut">More Info</a>
+        </div></div></div>
+          <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card hc" style="width: 18rem;">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-fe762f562785b8de4255b874fb8e6bc5-lq" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold" style="color:rgb(45,45,45);">PCOS</p>
+              <p class="card-text" style="color:rgb(48, 48, 48);">PCOS can cause hormonal imbalances, irregular periods, excess androgen levels and cysts in the ovaries. Irregular periods, usually with a lack of ovulation, can make it difficult to become pregnant. The exact cause of PCOS is unknown. Early diagnosis and treatment along with weight loss may lower the risk of long-term complications such as type 2 diabetes and heart disease.</p>
+              
+              <a target ="_blank" href="https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome" class="btn  btn-lg mt-3 infobut">More Info</a>
+            </div></div></div>
+      <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card hc" style="width: 18rem;">
+        <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/picture/2016/4/Heart_Problems_Infographic_2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="fw-bold" style="color:rgb(45,45,45);">CARDIOVASCULAR DISEASE</p>
+          <p class="card-text" style="color:rgb(48,48,48);">The most important behavioural risk factors of heart disease and stroke are unhealthy diet, physical inactivity, tobacco use and alcohol. The effects of behavioural risk factors may show up in individuals as raised blood pressure, raised blood glucose obesity.</p>
+          
+          <a target ="_blank" href="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)" class="btn  btn-lg mt-3 infobut">More Info</a>
+        </div></div>
+    </div>
+    </div>
+  </div>
+
+
+
+	    <!--testimonials-->
+  
+    <div class="container ">
+      <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-4 ">
+                <div class="card">
+                  <div class="box front">
+                    <img alt="" src="img/3.jpg">
+                    <h2>Nital Pandey</h2>
+                    <h4>Homemaker</h4>
+                    <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+                    </p>
+                  </div>
+                  <div class="box back">
+                    <span class="fa fa-quote-left"></span>
+                    <p>
+                      Hygieia has realy helped me renew my health and keep yself in check with its wonderful health plans for women.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="box front">
+                    <img alt="" src="img/5.jpg">
+                    <h2>Ashutosh Das</h2>
+                    <h4>Project Manager, Amazon</h4>
+                    <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+                    </p>
+                  </div>
+                  <div class="box back">
+                    <span class="fa fa-quote-left"></span>
+                    <p>
+                      I am able to get my lab tests and medicines at a reasonable price at Hygieia. Its userface is also smooth allowing me to navigate seamlessly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="box front">
+                    <img alt="" src="img/2.jpg">
+                    <h2>Sonal Jha</h2>
+                    <h4>SDE, Microsoft</h4>
+                    <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+                    </p>
+                  </div>
+                  <div class="box back">
+                    <span class="fa fa-quote-left"></span>
+                    <p>
+                      Working women often neglect their health often leading to a lot of health issues among most of us. With Hygieia's health workshops and decent price ratings, it has been a gamechanger for me.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="box front">
+                    <img alt="" src="img/1.jpg">
+                    <h2>Jesicca Doe</h2>
+                    <h4>CEO, Microsoft</h4>
+                    <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+                    </p>
+                  </div>
+                  <div class="box back">
+                    <span class="fa fa-quote-left"></span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="box front">
+                    <img alt="" src="img/2.jpg">
+                    <h2>Claire Chedd</h2>
+                    <h4>CEO, Microsoft</h4>
+                    <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+                    </p>
+                  </div>
+                  <div class="box back">
+                    <span class="fa fa-quote-left"></span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="box front">
+                    <img alt="" src="img/3.jpg">
+                    <h2>Mary Joe</h2>
+                    <h4>CEO, Microsoft</h4>
+                    <p class="socials">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+                    </p>
+                  </div>
+                  <div class="box back">
+                    <span class="fa fa-quote-left"></span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      </div>
+    </div>
+
+
+</main>    </div>
+
+
+     
+ 
+   
+    <footer>
+
+
+      <div id="counts">
+        <ul id="countgrid">
+        <li>
+          <div><i class="bi bi-hospital-fill"></i>
+        <p >4764+</p></div>
+        <p>Diagnostic centrs across India</p>
+        
+        </li>
+
+
+        <li>
+          <div><i class="bi bi-file-medical-fill"></i>
+          <p >4764+</p></div>
+          <p>Labtest centers</p>
+          
+          </li>
+
+
+          <li>
+            <div><i class="bi bi-bandaid-fill"></i>
+            <p>4764+</p></div>
+            <p>Largest private network of clinics.</p>
+            
+            </li>
+
+
+            <li>
+              <div><i class="bi bi-capsule-pill"></i>
+              <p >4764+</p></div>
+              <p>Largest network of 24/7 medicals stores in India. </p>
+              
+              </li>
+
+
+              <li>
+                <div><i class="bi bi-prescription2"></i>
+                <p >4764+</p></div>
+                <p>Highest number of online diagnoses. </p>
+                
+                </li>
+
+
+                <li>
+                  <div><i class="bi bi-person-arms-up"></i>
+                  <p >4764+</p></div>
+                  <p>Poor kids helped each month.  </p>
+                  
+                  </li>
+
+        </ul>
+      </div>
+      <div id="reviews">
+        
+        <div id="naming"> <img src="/logo.jpg" alt="" width="40" height="40" class="d-inline-block align-text-top">
+        <h3 style="color:rgb(56, 139, 56);">Hygieia</h3></div>
+        <form action="#" method="POST">
+        <label for="opinion" style="color:rgb(56, 139, 56) ;">How was your experience with Hygieia?</label>
+        <textarea name="review" id="opinion" maxlength="120" rows="7" placeholder="Share your experience here:)"></textarea>
+        <button type="submit" class="d-block my-2 ml-10" id="reviewsubmit">Submit</button>
+      </form>
+     
+      </div>
+
+      
+           
+    
+
+    </footer>
+    <div id="contacts"><i class="bi bi-instagram"></i><i class="bi bi-whatsapp"></i><i class="bi bi-youtube"></i></div>
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
