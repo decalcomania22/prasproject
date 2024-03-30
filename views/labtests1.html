@@ -61,8 +61,8 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-none d-md-flex ms-auto">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-none d-md-flex ms-auto" action="/search" >
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="navsearch">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <a class="nav-item">
@@ -117,21 +117,26 @@
           </div>
         
           <div class="detailform">
-            <form class="moredetail" action="" method="" style="color:green;">
+            <form class="moredetail" action="/labsearch" method="POST" style="color:green;">
                 <p style="color:rgb(227, 164, 77); background-color: rgb(250, 250, 240); padding:10px; border-radius: 8px;" class="mb-0">Book a Lab Test</p>
         
         
                 <div class="placedate"><label for="pin">PIN of preferred location</label>
-                <input type="number" placeholder="Enter location PIN" id="pin" name="place pin" class="p-2">
+                <input type="number" placeholder="Enter location PIN" id="pin" class="p-2" name="testplace">
                 <label for="consultationDate" >Select Date</label>
-                <input type="date" id="consultationDate" name="dateofconsultation" class="p-2"></div>
+                <input type="date" name="testdate" id="consultationDate" class="p-2"></div>
         
         
+
         
                 <div class="rem"><label for="spe">Select Symptoms</label>
-                <select id="spe" class="p-2" >
-                    <option value="Fever">Fever</option>
-                    <option value="Stomach">Acute Stomach ache</option>
+                <select id="spe" class="p-2" name="Symtest" >
+                    <option value="fever">Fever</option>
+                    <option value="a-s-ache">Acute Stomach ache</option>
+                    <option value="fatigue">Fatigue</option>
+                    <option value="headache">Headache</option>
+                    
+
                 </select>
                 <button type="submit" id="submitbutton">Submit</button>
         </div>

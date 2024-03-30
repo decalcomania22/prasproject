@@ -108,17 +108,18 @@
         <option value="Delhi">New Delhi</option>
         <option value="Hyderabad">Hyderabad</option>
         <option value="Bangalore">Bangalore</option>
-        <option value="Kolkata">Kolkata</option>
+        <option value="kolkata">Kolkata</option>
         <option value="Chennai">Chennai</option>
         <option value="Jaipur">Jaipur</option>
-        <option value="Noida">Noida</option>
-        <option value="Gurugram">Gurugram</option>
+        <option value="noida">Noida</option>
+        <option value="gurugram">Gurugram</option>
         <option value="Pune">Pune</option>
-        <option value="Ahemdabad">Ahemdabad</option>
+        <option value="ahemdabad">Ahemdabad</option>
         <option value="Indore">Indore</option>
+        <option value="mumbai">Mumbai</option>
     </select></div>
       <div>  <i class="bi bi-search" style="color:rgb(0, 109, 0);"></i>
-        <input type="name" name="doc/hos_name" placeholder="Search Doctors,Hospitals,Specialties,Symptoms etc" id="gensearch"/></div>
+        <input type="name" name="hospitals" placeholder="Search Hospitals" id="gensearch"/></div>
   </div>
      <div class> <button type="submit" id="findbutton">Find</button></div>
        
@@ -126,12 +127,12 @@
   </div>
 
   <div class="detailform">
-    <form class="moredetail" action="/docgrid" method="POST" style="color:green;">
+    <form class="moredetail" action="/docgrid1" method="POST" style="color:green;">
         <p style="color:rgb(227, 164, 77); background-color: rgb(250, 250, 240); padding:10px; border-radius: 8px;" class="mb-0">Book an Appointment</p>
 
 
         <div class="placedate"><label for="pin">PIN of preferred location</label>
-        <input type="number" placeholder="Enter location PIN" id="pin" name="place pin" class="p-2">
+        <input type="number" placeholder="Enter location PIN" id="pin" name="pin" class="p-2">
         <label for="consultationDate" >Select Date</label>
         <input type="date" id="consultationDate" name="date" class="p-2"></div>
 
@@ -143,7 +144,7 @@
             <option value="cardiology">Cardiology</option>
             <option value="orthopaedics">Orthopaedics</option>
             <option value="ent">ENT</option>
-            <option value="pediatrics">Pediatrics</option>
+            <option value="paediatrics">Pediatrics</option>
             <option value="gynaecology">Gynaecology</option>
             <option value="neurology">Neurology</option>
         </select>

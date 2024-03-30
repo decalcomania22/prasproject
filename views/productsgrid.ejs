@@ -97,107 +97,18 @@
           <main>
             <div class="container text-center prod">
               <div class="row">
+                <%if(med.length==0){%>
+                  <p>Searched product is not available.</p>
+                  <%}else{%>
+                  <%for(medi of med){%>
                 <div class="col">
-                  <img src="/testproducts/p3.png">
-                  <p>name</p>
-                  <p>price</p>
+                  <img src="<%=medi.image%>">
+                  <p><%=medi.name%></p>
+                  <p><%=medi.price%></p>
                   <button class="cardbutton">Add to Cart</button>
                 </div>
-                <div class="col">
-                  <img src="/testproducts/p9.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/p5.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/p3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-              </div>
-            
+                <%}}%>
             </div>
-
-
-
-            <div class="container text-center prod">
-              <div class="row">
-                <div class="col">
-                  <img src="/testproducts/p6.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/p3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/p8.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                    <img src="/testproducts/p7.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-              </div>
-             
-            </div>
-
-
-
-
-            <div class="container text-center prod">
-              <div class="row">
-                <div class="col">
-                  <img src="/testproducts/p3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/p3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/ss2.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/testproducts/sunscreen.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-              </div>
-            
-            </div>
-
-
-
-
-
-
-
-
-
 
             
           </main>

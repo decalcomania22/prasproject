@@ -96,109 +96,21 @@
         </header>
           <main>
             <div class="container text-center prod">
+              <%if(test.length==0){%>
+                <p>This lab test is not avialable.Please try chaning location/Labtestcenter.</p>
+                <%}else{%>
+                <%for(tst of test){%>
+                
               <div class="row">
                 <div class="col">
                   <img src="/labtesticons/test1.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test2.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test2.png">
-                  <p>name</p>
-                  <p>price</p>
+                  <p><%=tst.name%></p>
+                  <p><%=tst.price%></p>
                   <button class="cardbutton">Add to Cart</button>
                 </div>
               </div>
-            
             </div>
-
-
-
-            <div class="container text-center prod">
-              <div class="row">
-                <div class="col">
-                  <img src="/labtesticons/test2.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test1.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                    <img src="/labtesticons/test2.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-              </div>
-             
-            </div>
-
-
-
-
-            <div class="container text-center prod">
-              <div class="row">
-                <div class="col">
-                  <img src="/labtesticons/test1.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test2.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test3.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-                <div class="col">
-                  <img src="/labtesticons/test2.png">
-                  <p>name</p>
-                  <p>price</p>
-                  <button class="cardbutton">Add to Cart</button>
-                </div>
-              </div>
-            
-            </div>
-
-
-
-
-
-
-
-
-
-
+            <%}}%>
             
           </main>
 
