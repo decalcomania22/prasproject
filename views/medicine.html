@@ -1,0 +1,873 @@
+<<<<<<< HEAD:medicine.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" > 
+    <title>Medicine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="medstyl.css">
+    <link rel="stylesheet" type="text/css" href="navstyl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-light navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            <div class="display-12 text-success fw-bold d-inline-block ">Hygieia  </div> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center row justify-container-between" >
+              <li class="nav-item co-md-5">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="index.html">
+                  <i class="bi bi-house-door-fill "></i> Home</a></li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="doctors.html">
+                  <i class="bi bi-hospital-fill"></i>Doctors</a>
+              </li>
+              <li class="nav-item">
+<<<<<<< HEAD
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="labtests1.html">
+=======
+                <a class="nav-link active text-success d-inline-flex nav_opt" aria-current="page" href="labtests1.html">
+>>>>>>> 5cebd00b70d8e72f63118eb7ea48df3b8ff30dc4
+                  <i class="bi bi-prescription2"></i>Labtests</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="medicine.html">
+                  <i class="bi bi-capsule-pill"></i>Medicines</a>
+                </li>
+              <li class="nav-item dropdown display-12 text-success d-flex">
+                <a class="nav-link dropdown-toggle text-success nav_opt" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item " href="#">Help</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-none d-md-flex ms-auto">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a class="nav-item">
+              <a class="nav-link display-6 active text-success d-flex" aria-current="page" href="#sidebar" role="button" data-bs-toggle="offcanvas" aria-controls="sidebar">
+                <i class="bi bi-person-circle"></i></a>
+              </a>
+          </li>
+          </div>
+          </li>
+          </div>
+
+    <!--offcanvas-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="sidebar-label" style="color:white; font-weight: bold; font-family: 'Nunito';">Username</div>
+              <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a href="" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-person "></i>Switch Account</div></a>
+              <a href="" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-box-arrow-right "></i>Log Out</div></a>
+            </div>
+          </div>
+      </nav>
+
+      <!--scroll tabs-->
+      <div class=" p-2"><h4>How can we help you today?</h4></div>
+      <div class="wrapper">
+        <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+        <ul class="tabs-box">
+          <!-- <li class="tab"><i class="bi bi-capsule-pill"></i>Buy Medicines</li> -->
+          <li class="tab active"><i class="bi bi-prescription"></i>Upload Prescription</li>
+          <li class="tab"><i class="bi bi-file-earmark-medical-fill"></i>Digital Consult</li>
+          <!-- <li class="tab"><i class="bi bi-hospital-fill"></i>Doctor's Appointment</li> -->
+          <li class="tab"><i class="bi bi-backpack3"></i>Manage Diabetes</li>
+          <li class="tab"><i class="bi bi-journal-medical"></i>Health-Checks & Tests</li>
+          <li class="tab"><i class="bi bi-h-circle-fill"></i>Buy Insurance</li>
+        </ul>
+        <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+      </div>
+  
+   <!-- <div class="container ">
+              <div class="row align-lg-center d-none d-lg-flex">
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Buy Medicines</small></p></button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Upload Prescription</p></small></button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success"></i>
+                        <p class="text-center"><small>Digital consult</small></p></button>
+                </div> 
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Manage Diabetes</small></p></button>
+                </div>
+                <div class="col-lg-2"> 
+                    <button type="button" class="btn btn-success">
+                        
+                        <p class="text-center"><small>Health-Check Tests</small><p</button></div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Buy Insurance</small></p></button>
+                </div>
+        </div></div></div></div></div>-->
+
+        <!--membership advertisement-->
+       <div class="text-center p-4" ><a href="#"><img src="assets\Membership.png" alt="membership" class="img-fluid "></div>
+       </a>
+        <div class="p-5">  </div>
+         
+        <!--advertisment circle-->
+        <div class="slider">
+
+            <div class="list">
+                <div class="item" >
+                    <img src="https://www.cerave.hk/en-hk/-/media/Project/Loreal/BrandSites/CeraVe/Master/CeraveAPAC/Hong-Kong/Shared/Product/Moisturizers/CeraVe_MoisturizingLotion_NEW_v021.png">
+                </div>
+                <div class="item active">
+                    <img src="https://reflexmedical.co.uk/wp-content/uploads/2020/07/GlucoRx-Nexus-Meter-no-shadow.png">
+                </div>
+                <div class="item">
+                    <img src="https://newassets.apollo247.com/pub/media/catalog/product/w/h/whi0149_1_.png">
+                </div>
+                <div class="item">
+                    <img src="https://media.ulta.com/i/ulta/2600597?w=720&fmt=png">
+                </div>
+                <div class="item">
+                    <img src="http://pngimg.com/uploads/vitamins/vitamins_PNG54.png">
+                </div>
+            </div>
+            <div class="c">
+                Hygieia- Medical app for at home solution to all your problems</div>
+            <div class="content">
+                <div> </div>
+                <div>Hygieia</div>
+                <button>special offers</button>
+    
+            </div>
+            <div class="arow">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+
+
+
+        <div id="searchmedi">
+          <form action="" method="" id="mediform">
+           <label for="medibox" style="font-family: Nunito; color:rgb(76, 76, 76); font-size: 2rem;"  >Search for meds and essentials </label>
+           <input id="medibox" class="d-block mt-2" type="text" placeholder="Search" style="border-width: 0; border-radius: 5px; padding:5px 7px; width:100%;"/>
+           <button type="submit" class="d-block" id="medsbutton">Search</button>
+          </form>
+        </div>
+    
+    <!--shop by category code-->    
+    <div class="p-4 text-success text-center"><h3>Shop By Category</h3></div>
+    <div class="container p-4">
+      <div class="row text-center d-lg-flex">
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+            <button type="button" class="btn btn-light">
+           <img src="https://i.pinimg.com/originals/c7/85/64/c785643f95db79fd8f88bce36a609c7e.jpg" width="50" height="50" class="">
+               <p class="text-center text-success fw-bold"><small>Hygieia Products</small></p></button></a>
+        </div>
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+            <img src="https://4.bp.blogspot.com/-kfZkZrwfHjQ/VeJ-lEnXg2I/AAAAAAAAMkA/oUGLYke5PZM/s1600/DSCN1372.JPG" width="50" height="50" class="">
+              <p class="text-center text-success fw-bold"><small>Baby Care</small></p></button></a>
+      </div>
+      <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+          <img src="https://i5.walmartimages.com/asr/4f1ae020-222b-4502-92e8-51fb4560f24a_1.cb50f0297ca73da5f77b3bf39acb634b.jpeg" alt=""
+           width ="50" height="50" class="">
+            <p class="text-center text-success fw-bold"><small>Personal Care</small></p></button></a></div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://i5.walmartimages.com/asr/46aa16e6-7742-4dfa-be14-16e3afb5a35b_1.0e9f213539ce92423dddd4e46ba6c1d4.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Health Drinks & Food</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://theskincareedit.com/.image/t_share/MTY1MDE2NDM3ODQ3NTAwNzk3/skincare-for-sensitive-skin-1.jpg" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Skin Care</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://www.omgtricks.com/wp-content/uploads/2018/07/81-UalGe6UL._SL1500_.jpg" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Women Care</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://recipemarker.com/wp-content/uploads/2021/10/Best-Optimum-Nutrition-Flavor-Body-Image-1.jpg" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Protein powders</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://www.fitnessrobust.com/wp-content/uploads/2020/12/Untitled-design.png" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Multivitamins</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://mtelehealth.com/wp-content/uploads/2019/10/UPDATED-tablet-with-devices-compressed.png" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Health Devices</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://shopznowpk.com/wp-content/uploads/2021/01/zandu-12.jpg?189db0&189db0" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Ayurveda</small></p></button></a>
+      </div>
+</div></div></div>
+
+<!--advertisment carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://m.media-amazon.com/images/S/aplus-media/vc/2a700beb-b0b5-409d-990d-c8100855674b.__CR0,0,970,600_PT0_SX970_V1___.jpg" width="100%" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                  <h5>Shop Now!</h5>
+                  <p> Now upto 50% off! Boost your immunity with Dabur.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/596ce3c8cd0f68df1fd7598e/ad4295f0-ecf3-4ee9-9f6d-dfc0ca54a6a9/1495535-Cerave-for-Psoriasis-1200x628-facebook-1200x628.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Shop Now!</h5>
+                  <p>Pamper your skin this Holi season</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://corecommunique.com/wp-content/uploads/2016/04/Glucon-D-Campaign.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Shop Now!</h5>
+                  <p>Don't let the heat get to you this summer season</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="p-4 text-success text-center"><h3>New on Hygieia today</h3></div>
+        <div class="container p-4">
+          <div class="row text-center d-lg-flex">
+              
+              <div class="col-3 "><a href="#" class="text-light text-decoration-none">
+                  <button type="button" class="btn btn-success"><i class="bi bi-backpack3"></i>
+                      <p class="text-center"><small>Manage Diabetes</small></p></button></a>
+              </div>
+              <div class="col-3 "><a href="#" class="text-light text-decoration-none">
+                <button type="button" class="btn btn-success"><i class="bi bi-h-circle-fill"></i>
+                    <p class="text-center"><small>Buy Insurance</small></p></button></a>
+            </div>
+            
+             <div class="col-3">
+                <button type="button" class="btn btn-success"><a href="#" class="text-light text-decoration-none">
+                  <i class="bi bi-capsule-pill"></i>
+                  <p class="text-center"><small>My Medicines</small></p></button></a></div>
+            <div class="col-3">
+              <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-success">
+                  <i class="bi bi-bag-plus"></i>
+                    <p class="text-center"><small>Track Symptoms</small></p></button></a>
+                  </div>
+            </div>
+    </div></div>
+    <div class="p-4 text-success text-center"><h3>Shop By Brand</h3></div>
+    <div class="container p-4">
+        <div class="row text-center d-lg-flex">
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+            <button type="button" class="btn btn-light">
+           <img src="https://our-pharmacy.gr/image/cache/catalog/Logos/cerave-1200x630h.png" width="50" height="50" class="">
+               <p class="text-center text-success "><small>CeraVe</small></p></button></a>
+        </div>
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.x1dtqJGRc-rDcUS_q8TrXAHaGn&pid=Api&P=0&h=180" width="50" height="50" class="">
+              <p class="text-center text-success "><small>Dabur</small></p></button></a>
+      </div>
+      <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+          <img src="https://iconape.com/wp-content/files/yk/82739/png/nivea-logo.png" alt=""
+           width ="50" height="50" class="">
+            <p class="text-center text-success "><small>Nivea</small></p></button></a></div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://mma.prnewswire.com/media/604696/ONE_TOUCH_Logo.jpg?p=facebook" width="50" height="50" class="">
+           <p class="text-center text-success "><small>OneTouch</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://www.logosvgpng.com/wp-content/uploads/2021/12/hansaplast-logo-vector.png" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Hansaplast</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://logos-download.com/wp-content/uploads/2016/03/Pampers_logo_emblem_logotype.png" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Pampers</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://cdn.sanity.io/images/92ui5egz/production/9b8ffca8c93a60ba0faa4e8863d5f60828c025c7-1081x1081.jpg?auto=format" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Horlicks</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://logodix.com/logo/1746422.jpg" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Whisper</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://static.abbottnutrition.com/cms-prod/pediasure.in/img/ped-logo_tcm1305-69177.png" width="60" height="50" class="">
+           <p class="text-center text-success "><small>Pediasure</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="http://dev.rodpub.com/images/121/488_main.jpg" width="60" height="50" class="">
+           <p class="text-center text-success "><small>Cetaphil</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.8XjWLc3GapFnHwR2l-RNnAHaCR&pid=Api&P=0&h=180" width="60" height="50" class="">
+           <p class="text-center text-success "><small>Ensure</small></p></button></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--FAQs Accordian-->
+  <div class="p-4 text-success text-center"><h3 class="fw-bold">Frequently Asked Questions</h3></div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          How to order medicines online from Hygieia Pharmacy
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Ordering medicines from Hygieia medical store is quick and hassle-free.</strong>If you wish to purchase over-the-counter medicines or FMCG products, all you need to do is click on the ‘Buy Medicines’ section on the app/website and type the name of the product you wish to buy in the search box. Once you select the product, you can click on the ‘Add to Cart’ button and proceed to make the payment. Once your order has been confirmed, we will start prepping your order for home delivery. 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Is online medicine delivery safe?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Absolutely!</strong>All the medicines/products sold through our platform are inspected thoroughly for their authenticity and quality. Also, while delivering the medicines, our team follows strict safety protocols to ensure only the top-notch products get delivered to you.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How do I know if there is a delay in delivery?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          If, for any reason, your order is delayed, our team will contact you either through SMS, call or email and inform you of the same. You can also check the status of your order on the app/website by clicking on the ‘Order Status’ button.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Does Hygieia provide home delivery of medicines?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Yes, Hygieia now provides home delivery in most parts of India.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Does Hygieia provide free home delivery of medicines?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          We provide free delivery for the first month after which free home delivery is provided on subscribing to Hygieia's premium membership.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contacts"><i class="bi bi-instagram"></i><i class="bi bi-whatsapp"></i><i class="bi bi-youtube"></i></div>
+
+<!--<img src="https://www.acc.org/-/media/Non-Clinical/Images/Membership/Member-Benefits-and-Resources/Member-Publications/Cardiology/2019/03/Prevention-1.jpg">
+-->
+<script src="med.js"></script>
+        <script src="kjk.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+  </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" > 
+    <title>Medicine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="medstyl.css">
+    <link rel="stylesheet" type="text/css" href="navstyl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-light navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <!--enter logo here-->
+            <img src="/logo.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            <div class="display-12 text-success fw-bold d-inline-block ">Hygieia  </div> 
+          </a>
+  
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center row justify-container-between" >
+              <li class="nav-item co-md-5">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/">
+                  <i class="bi bi-house-door-fill "></i> Home</a></li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/doctorsapp">
+                  <i class="bi bi-hospital-fill"></i>Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/labtests">
+                  <i class="bi bi-prescription2"></i>Labtests</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success d-flex nav_opt" aria-current="page" href="/medicines">
+                  <i class="bi bi-capsule-pill"></i>Medicines</a>
+                </li>
+              <li class="nav-item dropdown display-12 text-success d-flex">
+                <a class="nav-link dropdown-toggle text-success nav_opt" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item " href="#">Help</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-none d-md-flex ms-auto">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a class="nav-item">
+              <a class="nav-link display-6 active text-success d-flex" aria-current="page" href="#sidebar" role="button" data-bs-toggle="offcanvas" aria-controls="sidebar">
+                <i class="bi bi-person-circle"></i></a>
+              </a>
+          </li>
+          </div>
+          </li>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="sidebar-label" style="color:white; font-weight: bold; font-family: 'Nunito';">Username</div>
+              <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a href="/login" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-person "></i>Switch Account</div></a>
+              <a href="/login" class="d-block" style="text-decoration: none;"><div class="offcanvasoptions"><i class="bi bi-box-arrow-right "></i>Log Out</div></a>
+            </div>
+          </div>
+      </nav>
+      <div class=" p-2"><h4>How can we help you today?</h4></div>
+      <div class="wrapper">
+        <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+        <ul class="tabs-box">
+          <!-- <li class="tab"><i class="bi bi-capsule-pill"></i>Buy Medicines</li> -->
+          <li class="tab active"><i class="bi bi-prescription"></i>Upload Prescription</li>
+          <li class="tab"><i class="bi bi-file-earmark-medical-fill"></i>Digital Consult</li>
+          <!-- <li class="tab"><i class="bi bi-hospital-fill"></i>Doctor's Appointment</li> -->
+          <li class="tab"><i class="bi bi-backpack3"></i>Manage Diabetes</li>
+          <li class="tab"><i class="bi bi-journal-medical"></i>Health-Checks & Tests</li>
+          <li class="tab"><i class="bi bi-h-circle-fill"></i>Buy Insurance</li>
+        </ul>
+        <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+      </div>
+  
+   <!-- <div class="container ">
+              <div class="row align-lg-center d-none d-lg-flex">
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Buy Medicines</small></p></button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Upload Prescription</p></small></button>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success"></i>
+                        <p class="text-center"><small>Digital consult</small></p></button>
+                </div> 
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Manage Diabetes</small></p></button>
+                </div>
+                <div class="col-lg-2"> 
+                    <button type="button" class="btn btn-success">
+                        
+                        <p class="text-center"><small>Health-Check Tests</small><p</button></div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success">
+                        <p class="text-center"><small>Buy Insurance</small></p></button>
+                </div>
+        </div></div></div></div></div>-->
+       <div class="text-center p-4" ><a href="#"><img src="\Membership.png" alt="membership" class="img-fluid "></div>
+       </a>
+        <div class="p-5">  </div>
+          <div class="slider">
+
+            <div class="list">
+                <div class="item" >
+                    <img src="https://www.cerave.hk/en-hk/-/media/Project/Loreal/BrandSites/CeraVe/Master/CeraveAPAC/Hong-Kong/Shared/Product/Moisturizers/CeraVe_MoisturizingLotion_NEW_v021.png">
+                </div>
+                <div class="item active">
+                    <img src="https://reflexmedical.co.uk/wp-content/uploads/2020/07/GlucoRx-Nexus-Meter-no-shadow.png">
+                </div>
+                <div class="item">
+                    <img src="https://new.apollo247.com/pub/media/catalog/product/w/h/whi0149_1_.png">
+                </div>
+                <div class="item">
+                    <img src="https://media.ulta.com/i/ulta/2600597?w=720&fmt=png">
+                </div>
+                <div class="item">
+                    <img src="http://pngimg.com/uploads/vitamins/vitamins_PNG54.png">
+                </div>
+            </div>
+            <div class="c">
+                Hygieia- Medical app for at home solution to all your problems</div>
+            <div class="content">
+                <div> </div>
+                <div>Hygieia</div>
+                <button>special offers</button>
+    
+            </div>
+            <div class="arow">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+
+
+
+        <div id="searchmedi">
+          <form action="" method="" id="mediform">
+           <label for="medibox" style="font-family: Nunito; color:rgb(76, 76, 76); font-size: 2rem;"  >Search for meds and essentials </label>
+           <input id="medibox" class="d-block mt-2" type="text" placeholder="Search" style="border-width: 0; border-radius: 5px; padding:5px 7px; width:100%;"/>
+           <button type="submit" class="d-block" id="medsbutton">Search</button>
+          </form>
+        </div>
+    
+        
+    <div class="p-4 text-success text-center"><h3>Shop By Category</h3></div>
+    <div class="container p-4">
+      <div class="row text-center d-lg-flex">
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+            <button type="button" class="btn btn-light">
+           <img src="https://i.pinimg.com/originals/c7/85/64/c785643f95db79fd8f88bce36a609c7e.jpg" width="50" height="50" class="">
+               <p class="text-center text-success fw-bold"><small>Hygieia Products</small></p></button></a>
+        </div>
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+            <img src="https://4.bp.blogspot.com/-kfZkZrwfHjQ/VeJ-lEnXg2I/AAAAAAAAMkA/oUGLYke5PZM/s1600/DSCN1372.JPG" width="50" height="50" class="">
+              <p class="text-center text-success fw-bold"><small>Baby Care</small></p></button></a>
+      </div>
+      <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+          <img src="https://i5.walmartimages.com/asr/4f1ae020-222b-4502-92e8-51fb4560f24a_1.cb50f0297ca73da5f77b3bf39acb634b.jpeg" alt=""
+           width ="50" height="50" class="">
+            <p class="text-center text-success fw-bold"><small>Personal Care</small></p></button></a></div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://i5.walmartimages.com/asr/46aa16e6-7742-4dfa-be14-16e3afb5a35b_1.0e9f213539ce92423dddd4e46ba6c1d4.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Health Drinks & Food</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://theskincareedit.com/.image/t_share/MTY1MDE2NDM3ODQ3NTAwNzk3/skincare-for-sensitive-skin-1.jpg" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Skin Care</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://www.omgtricks.com/wp-content/uploads/2018/07/81-UalGe6UL._SL1500_.jpg" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Women Care</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://recipemarker.com/wp-content/uploads/2021/10/Best-Optimum-Nutrition-Flavor-Body-Image-1.jpg" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Protein powders</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://www.fitnessrobust.com/wp-content/uploads/2020/12/Untitled-design.png" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Multivitamins</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://mtelehealth.com/wp-content/uploads/2019/10/UPDATED-tablet-with-devices-compressed.png" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Health Devices</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://shopznowpk.com/wp-content/uploads/2021/01/zandu-12.jpg?189db0&189db0" width="50" height="50" class="">
+           <p class="text-center text-success fw-bold"><small>Ayurveda</small></p></button></a>
+      </div>
+</div></div></div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://m.media-amazon.com/images/S/aplus-media/vc/2a700beb-b0b5-409d-990d-c8100855674b.__CR0,0,970,600_PT0_SX970_V1___.jpg" width="100%" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                  <h5>Shop Now!</h5>
+                  <p> Now upto 50% off! Boost your immunity with Dabur.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/596ce3c8cd0f68df1fd7598e/ad4295f0-ecf3-4ee9-9f6d-dfc0ca54a6a9/1495535-Cerave-for-Psoriasis-1200x628-facebook-1200x628.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Shop Now!</h5>
+                  <p>Pamper your skin this Holi season</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://corecommunique.com/wp-content/uploads/2016/04/Glucon-D-Campaign.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Shop Now!</h5>
+                  <p>Don't let the heat get to you this summer season</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- <div class="p-4 text-success text-center"><h3>New on Hygieia today</h3></div>
+        <div class="container p-4">
+          <div class="row text-center d-lg-flex">
+              
+              <div class="col-3 "><a href="#" class="text-light text-decoration-none">
+                  <button type="button" class="btn btn-success"><i class="bi bi-backpack3"></i>
+                      <p class="text-center"><small>Manage Diabetes</small></p></button></a>
+              </div>
+              <div class="col-3 "><a href="#" class="text-light text-decoration-none">
+                <button type="button" class="btn btn-success"><i class="bi bi-h-circle-fill"></i>
+                    <p class="text-center"><small>Buy Insurance</small></p></button></a>
+            </div>
+            
+             <div class="col-3">
+                <button type="button" class="btn btn-success"><a href="#" class="text-light text-decoration-none">
+                  <i class="bi bi-capsule-pill"></i>
+                  <p class="text-center"><small>My Medicines</small></p></button></a></div>
+            <div class="col-3">
+              <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-success">
+                  <i class="bi bi-bag-plus"></i>
+                    <p class="text-center"><small>Track Symptoms</small></p></button></a>
+                  </div>
+            </div>
+    </div></div> -->
+    <div class="p-4 text-success text-center"><h3>Shop By Brand</h3></div>
+    <div class="container p-4">
+        <div class="row text-center d-lg-flex">
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+            <button type="button" class="btn btn-light">
+           <img src="https://our-pharmacy.gr/image/cache/catalog/Logos/cerave-1200x630h.png" width="50" height="50" class="">
+               <p class="text-center text-success "><small>CeraVe</small></p></button></a>
+        </div>
+        <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.x1dtqJGRc-rDcUS_q8TrXAHaGn&pid=Api&P=0&h=180" width="50" height="50" class="">
+              <p class="text-center text-success "><small>Dabur</small></p></button></a>
+      </div>
+      <div class="col-3 p-2"><a href="#" class="text-light text-decoration-none">
+          <button type="button" class="btn btn-light">
+          <img src="https://iconape.com/wp-content/files/yk/82739/png/nivea-logo.png" alt=""
+           width ="50" height="50" class="">
+            <p class="text-center text-success "><small>Nivea</small></p></button></a></div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://mma.prnewswire.com/media/604696/ONE_TOUCH_Logo.jpg?p=facebook" width="50" height="50" class="">
+           <p class="text-center text-success "><small>OneTouch</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://www.logosvgpng.com/wp-content/uploads/2021/12/hansaplast-logo-vector.png" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Hansaplast</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://logos-download.com/wp-content/uploads/2016/03/Pampers_logo_emblem_logotype.png" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Pampers</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://cdn.sanity.io/images/92ui5egz/production/9b8ffca8c93a60ba0faa4e8863d5f60828c025c7-1081x1081.jpg?auto=format" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Horlicks</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://logodix.com/logo/1746422.jpg" width="50" height="50" class="">
+           <p class="text-center text-success "><small>Whisper</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://static.abbottnutrition.com/cms-prod/pediasure.in/img/ped-logo_tcm1305-69177.png" width="60" height="50" class="">
+           <p class="text-center text-success "><small>Pediasure</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="http://dev.rodpub.com/images/121/488_main.jpg" width="60" height="50" class="">
+           <p class="text-center text-success "><small>Cetaphil</small></p></button></a>
+      </div>
+      <div class="col-3 p-2">
+        <a href="#" class="text-light text-decoration-none"><button type="button" class="btn btn-light">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.8XjWLc3GapFnHwR2l-RNnAHaCR&pid=Api&P=0&h=180" width="60" height="50" class="">
+           <p class="text-center text-success "><small>Ensure</small></p></button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-4 text-success text-center"><h3 class="fw-bold">Frequently Asked Questions</h3></div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          How to order medicines online from Hygieia Pharmacy
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Ordering medicines from Hygieia medical store is quick and hassle-free.</strong>If you wish to purchase over-the-counter medicines or FMCG products, all you need to do is click on the ‘Buy Medicines’ section on the app/website and type the name of the product you wish to buy in the search box. Once you select the product, you can click on the ‘Add to Cart’ button and proceed to make the payment. Once your order has been confirmed, we will start prepping your order for home delivery. 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Is online medicine delivery safe?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Absolutely!</strong>All the medicines/products sold through our platform are inspected thoroughly for their authenticity and quality. Also, while delivering the medicines, our team follows strict safety protocols to ensure only the top-notch products get delivered to you.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How do I know if there is a delay in delivery?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          If, for any reason, your order is delayed, our team will contact you either through SMS, call or email and inform you of the same. You can also check the status of your order on the app/website by clicking on the ‘Order Status’ button.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Does Hygieia provide home delivery of medicines?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Yes, Hygieia now provides home delivery in most parts of India.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Does Hygieia provide free home delivery of medicines?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          We provide free delivery for the first month after which free home delivery is provided on subscribing to Hygieia's premium membership.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contacts"><i class="bi bi-instagram"></i><i class="bi bi-whatsapp"></i><i class="bi bi-youtube"></i></div>
+
+<!--<img src="https://www.acc.org/-/media/Non-Clinical/Images/Membership/Member-Benefits-and-Resources/Member-ations/Cardiology/2019/03/Prevention-1.jpg">
+-->
+<script src="med.js"></script>
+        <script src="kjk.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+  </html>
+>>>>>>> 54494226cfa76fe3fe3f42338c6786d9dbb73296:views/medicine.html
