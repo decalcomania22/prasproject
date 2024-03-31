@@ -3,7 +3,7 @@ const path=require('path');
 const fs=require('fs');
 const mongodb=require('mongodb');
 const bcrypt=require('bcryptjs');
-// const multer=require('multer');
+const multer=require('multer');
 const db=require('./data/database');
 const upload=multer({dest:'presimages'});
 
@@ -167,12 +167,12 @@ const meddata=await db.getDb().collection('meds').find({$or:[{type:prod},{brandn
 res.render('productsgrid',{med:meddata}); 
 
 });
-// app.get('/uploadfile',function(req,res){
-//     const pathtouploadpage=path.join(__dirname,'views','uploadpres.html');
+app.get('/uploadfile',function(req,res){
+    const pathtouploadpage=path.join(__dirname,'views','uploadpres.html');
 
-//     res.sendFile(pathtouploadpage);
+    res.sendFile(pathtouploadpage);
 
-// });
+});
 
 app.post('/reviewsubmit',async function(req,res){
     const newreview=req.body.review;
@@ -181,12 +181,12 @@ app.post('/reviewsubmit',async function(req,res){
 });
 
 
-// app.post('/presupload',upload.single('prescription'),function(req,res){
-//     const uploadedimg=req.file;
+app.post('/presupload',upload.single('prescription'),function(req,res){
+    const uploadedimg=req.file;
     
 
     
-// });
+});
 
 db.connectToDatabase().then(function (){
 app.listen(3000);
