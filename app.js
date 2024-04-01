@@ -5,8 +5,8 @@ const mongodb=require('mongodb');
 const bcrypt=require('bcryptjs');
 const multer=require('multer');
 const db=require('./data/database');
-const upload=multer({dest:'presimages'});
 
+const upload=multer({dest:'images'});
 const app=express();
 
 app.set('views',path.join(__dirname,'views'));
@@ -181,10 +181,13 @@ app.post('/reviewsubmit',async function(req,res){
 });
 
 
-app.post('/presupload',upload.single('prescription'),function(req,res){
+app.post('/presupload',upload.single('prescription'), async function(req,res){
     const uploadedimg=req.file;
+  await db.getDb().collection('prescriptions').insertOne({
+   imagepath:uploadedimg.path
+    });
     
-
+res.redirect('/medicines');
     
 });
 
