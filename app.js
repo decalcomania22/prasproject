@@ -191,6 +191,9 @@ res.redirect('/medicines');
     
 });
 
+
+
+
 db.connectToDatabase().then(function (){
 app.listen(3000);
 }); 
